@@ -1,115 +1,95 @@
-\chapter{Mineração de Uso Web}
+\chapter{Mineração Web}
+A mineração web utiliza muitos conceitos da mineração de dados tradicional, por isso para começarmos a falar do assunto principal deste trabalho, que é a Mineração Web, teremos que introduzir alguns termos e conhecimentos mínimos de entendimento necessário para facilitar a compreensão.
 
+\section{Mineração de Dados}
 
-\section{Descrição do Problema de Programação Linear}
-O modelo de um problema de programação linear normalmente é apresentado em uma das formas a seguir \cite{Passos}:
+	Segundo \cite{BingLiu}, Mineração de Dados ou Data mining é o processo de analisar um grande conjunto de dados com o objetivo de encontrar padrões, informações relevantes. Devido à grande quantidade de dados que existem hoje em dia, geralmente não é mais possível fazer a análise individual dos dados para então obter-se alguma informação. Para solucionar esse problema, utilizamos a mineração de dados  que é capaz de fazer essa análise em uma grande quantidade de dados. A mineração de dados é uma iteração das seguintes etapas:
 
-$\\Max\ z = c^{T}x \\\\s.a.\left\{\begin{matrix}
-Ax\leq b\\x\geq 0
-\end{matrix}\right.$
-
-ou
-
-$\\Min\ z = c^{T}x \\\\s.a.\left\{\begin{matrix}
-Ax\geq  b\\x\geq 0
-\end{matrix}\right.$
-
-Um problema de programação linear com até três variáveis pode ser representado graficamente utilizando três eixos cartesianos. Os problemas com duas variáveis podem ainda ser facilmente resolvidos por meio da representação gráfica \cite{Passos}.
-
-A seguir é apresentado um problema com duas variáveis e sua representação. Apesar de, na prática os problemas de programação linear possuir um número de variáveis muito maior que dois ou três, a visualização gráfica de modelo, mesmo que simples, contribui para o entendimento dos métodos de resolução apresentados nas seções a seguir.
-No problema exemplo, uma empresa, que fabrica vários produtos, deseja maximizar o lucro na vendo de 2 desses produtos \cite{Hillier}.
-
-$\\Maximize\ z=3x_{1}+5x_{2}\\
-Sujeito\ a\\$
-\begin{eqnarray*}
-        1x_{1}\leq 4 (a)\\
-              2x_{2}\leq (b)\\
-        3x_{1}+2x_{2}\leq 8 (c)\\
-         x_{1}\geq 0, x_{2}\geq 0
-\end{eqnarray*}
-
-Onde,
 \begin{itemize}
-\item \textbf {x1} representa a quantidade do produto 1 produzido em uma semana
-\item \textbf {x2} representa a quantidade do produto 2 produzido em uma semana
-\item \textbf {Z} representa o lucro total por semana de produção desses dois produtos (em milhões de dólares), sendo o lucro do produto 1 de 3 milhões e o do produto 2 de 5 milhões.
+\item 	Pré-processamento: nesta etapa é feita uma preparação dos dados recolhidos, ou seja, os dados são analisados e ruídos são retirados, pois geralmente não estão devidamente adequados para mineração logo após o recolhimento;
+\item 	Mineração: após o pré-processamento o dado será então minerado pelo algoritmo que produzirá padrões e conhecimentos;
+\item  	Pós-processamento: para finalizar é feita a identificação e seleção dos padrões úteis para a pesquisa, já que muitas vezes os padrões encontrados pelo algoritmo não são úteis.
 \end{itemize}
 
-E as restrições representam as restrições de tempo de cada máquina utilizada no processo de produção,
+Apesar de utilizar muitos fundamentos da mineração de dados tradicional, existem algumas diferenças entre esta e a mineração web, sendo a principal delas é que a primeira aplica a mineração em dados estruturados, organizados em tabelas, como em um banco de dados, e a segunda em dados não-estruturados ou semi-estruturados.
+
+
+\section{A Mineração Web}
+	Segundo \cite{BingLiu}, web mining é o uso das técnicas de data mining para descobrir e extrair automaticamente informações relevantes dos documentos e serviços ligados a internet.
+
+	Este tipo de mineração utiliza as técnicas de data mining, com algumas modificações já que os dados na web não são estruturados, para extrair automaticamente informações relevantes dos documentos e serviços ligados à intenet, e sua aplicação pode ter os seguintes objetivos: encontrar documentos, (encontrar sites na web contendo documentos especificados por palavras-chave), selecionar e pré-processar informações, generalizar (descobrir padrões gerais entre sites), validar e interpretar os padrões minerados.
+
+	Apesar de ter como base a mineração de dados, a mineração web desenvolveu muitas formas próprias de mineração, devido à grande variedade de informações e dados que são disponibilizados na internet.
+
+	A Mineração Web hoje tem se tornado cada vez mais importante e mais estudada, e isto se deve por alguns fatores: o crescimento significativo de dados e informações lançadas na rede, a grande variedade de tipos de dados, a heterogeneidade das informações, ou seja, grande quantidade de sites, blogs que abordam um mesmo assunto e portanto geram informações similares, no entanto com um vocabulário totalmente diferente um do outro, o que dificulda muito a integração dessas informação.
+
+	Existem alguns fatores que facilitam a análise de uma página, tanto positivamente, quanto negativamente, por exemplo, um site  que tem seu link referenciado por muitas vezes em vários outros sites, pode ser considerado um site com informações de qualidade e ao mesmo tempo confiável, já um site que tem muita informação espalhada, conteúdo principal, links, propagandas, etc, já é mais difícil de ser analisado, logo também será mais difícil de recolher informações relevantes dele. Um dos motivos pelo qual a web é fonte de tanta informação e tem se tornado cada vez mais, é a facilidade com que as pessoas podem gerar conteúdo e publicar na internet, a consequência dessa facilidade é uma enorme quantidade de informações erradas, incompletas ou até mesmo mentirosas.
+
+	A internet é muito dinâmica, as informações estão em mudança constante, esse dinamismo também é refletido na maneira de analisar os dados oriundos da web, a cada momento são criadas novas formas de mineração, por exemplo, mineração de opinião, que é um tipo de mineração que analisa as informações postadas em fóruns por clientes, que fazem um relato sobre algum outro site ou sobre algum serviço ou produto utilizado; análise de redes sociais, que hoje em dia é uma fonte inesgotável e incessante de informações, pois os usuários estáo gerando conteúdo a todo instante, comentando sobre serviços, notícias, sobre qualquer coisa, e muitas dessas informações postadas nas redes sociais são de extrema importância para os interessados, por exemplo a empresa que realizou o serviço ou a venda para tal usuário.
+
+	Existem três categorias de mineração web e elas são divididas de acordo com a parte da Web a ser minerada, são elas: mineração de estrutura, mineração de conteúdo e mineração de uso.
+
+\subsection{Mineração de Estrutura}
+
+	A mineração de estrutura está focada nas informações que estão implícitas e os principais objetos de estudo desta categoria são os hipertextos.
+
+	Para tentarmos entender um pouco melhor, pensemos na Web como um grafo, onde as arestas são os links entre as páginas e os nós são as próprias páginas
+
+	A mineração de estrutura utiliza a teoria de grafos para analisar a estrutura de nó e conexão  de um site web. Este tipo de mineração descobre informações úteis dos links, que representam a estrutura da web. Por exemplo, através dos links nós podemos encontrar páginas importantes, que são a chave tecnológica usada nos motores de busca, podemos tambem encontrar comunidades de usuários com interesses em comum. O principal objetivo deste tipo de mineração é extrair relações previamente desconhecidas entre as páginas da web.
+
+	Este modelo é usado para classificar páginas da Web a respeito da similaridade ou relação existente entre elas. Através dessa análise podemos descobrir sites de autoridade ( sites que tem seus links frequentemente citados em outros sites).
+
+\subsection{Mineração de Conteúdo}
+
+	Este tipo de mineração extrai informações úteis do conteúdo de uma página web. É possível classificar e agrupar páginas da web pelo seu conteúdo, o que é uma técnica do método tradicional da mineração de dados, mas também podemos descobrir padrões, e extrair dados úteis deles. Podemos também extrair opiniões dos clientes para saber o que pensa o consumidor.
+
+	A mineração de conteúdo engloba os textos, imagens, vídeos, sons (que também é chamada de Mineração de Dados Multimídia) , hiperlinks; ou seja, é uma análise que busca informações em diversos tipos de dados.  Apesar de analisar vários tipos de arquivos, seu foco principal é na análise de textos e hipertextos. Esta área do web mining utiliza muito o Text Mining para poder obter informações dos textos não estruturados encontrados na rede.
+
+	Quando falamos de Mineração de Conteúdo, podemos aborda-la de duas maneiras:
+
 \begin{itemize}
-\item \textbf {(a)} representa que, durante o processo de produção, cada produto 1 necessita de 1 hora na máquina 1, e a máquina só tem disponível 4 horas por semana
-\item \textbf {(b)} representa que, durante o processo de produção, cada produto 2 necessita de 2 horas na máquina 2, e a máquina só tem disponível 12 horas por semana
-\item \textbf {(c)} representa que, durante o processo de produção, cada produto 1 necessita de 3 horas na máquina 3, e cada produto 2 necessita de 2 horas na máquina 3, e a máquina só tem disponível 8 horas por semana
+\item 	Recuperação de Informação: tem o objetivo de auxiliar o usuário na busca de informação, usado nos principais mecanismos de buscas da internet, através da utilização de palavras-chave.
+\item 	Banco de Dados: tem o objetivos de organizar os dados Web para que possam ser feitas contultas mais sofisticadas, e não sejam apenas buscas de palavras-chave.
 \end{itemize}
 
-Graficamente representado o problema ficaria da seguinte forma:
-\begin{center}
-	\captionof{figure}{Representação gráfica de um Problema de Programação Linear de duas variáveis}
-\end{center}
+\subsection{Mineração de Uso}
+	Com o aumento constante da popularidade e do uso do e-commerce , o número de cliques e as transações de dados coletadas da web alcançaram proporções enormes.
 
-Onde cada reta representa uma restrição do modelo, e a área cinza representa a região viável, ou seja nessa área estão contidas os valores ótimos de $x_{1}$ e $x_{2}$ para a maximização do lucro.
+	Analisar tantos dados ajuda as organizações a determinar o tempo de vida dos clientes, a criar estrategias de marketing de produtos e serviços, avaliar o efeito das promoções, providenciar mais conteúdo personalizado para clientes.
 
-Os método para resolução problemas de programação linear buscam a esse valores de $x_{1}$ e $x_{2}$  para determinação da solução ótima.
+	Mineração de uso se trata de uma anáise de padrões de rastreio de cliques, transações de usuários, e outros dados que são gerados ou colhidos como resultados de interações do usuário com o sistema. O objetivo principal é capturar, modelar e analisar o padrão de comportamento e os perfis dos usuários que interagem com o Sistema.
 
-\section{Métodos de Solução}
-Entre os métodos mais famosos para a resolução de problemas de programação linear estão o método simplex  e o método de pontos interiores.
-Depois da apresentação do método simplex,outros métodos com diferentes abordagens foram propostos \cite{Todd}. Porém, dentre os métodos existentes apenas o método de pontos interiores é atualmente competitivo em relação ao método simplex \apud{Bixby}{Munari}.
-A principal diferença entre esse dois métodos é o que o método simplex caminha pelos vértices da região viável, enquanto o método de pontos interiores caminha pelo interior da região viável \cite{MaculanPI}. Além disso, uma outra diferença é que o simplex exige muitas iterações com cálculos simples, enquanto o método de pontos interiores poucas iterações são exigidas, porém com cálculos mais elaborados.
-Apesar das vantagens do método de pontos interiores em relação ao método estudado neste trabalho, o método simplex possui melhor desempenho na resolução de problemas de pequeno porte em relação ao método de pontos interiores, tornando-se um método indispensável em ferramentas de programação linear.
+	Os padrões descoberto geralmente são recursos frequentemente acessados por grupos de usuários com interesses em comum.
 
-\subsection{Método Simplex}
-O método simplex é um dos algoritmos mais populares para a resolução de problemas de programação linear. Surgiu a mais de 60 anos atrás e foi proposto por George Dantzig.
+	A mineração de uso é dividida em uma sequência de três etapas: colheita de dados e pré-processamento, descoberta de padrão e análise do padrão.
 
-É um método iterativo, e sua ideia principal consiste no fato de que a cada iteração uma nova solução é encontrada, sempre melhor que a anterior até o ponto em que a solução ótima é obtida. Outra característica do método é o fato de ser matricial, ou seja, os dados a serem calculados são armazenados em matrizes.
+	Pré-processamento e Data Collection
 
-Com a utilização do método foi percebido que a cada iteração do método simplex eram requeridos muitos cálculos sobre valores que nem sempre importavam para a iteração seguinte, fato que do ponto de vista computacional tornaria o método ineficiente.A partir desse fato foi desenvolvido o método simplex revisado visando a resolução de problemas de programação linear computacionalmente.
+	Na primeira etapa, ou seja, no pré-processamento, os fluxos de cliques são limpos e particionados em conjuntos de transações que representarão as atividades de cada usuário durante várias visitas ao site. Outros critérios como o conteúdo e a estrutura do site também podem ser usados no pré-processamento para melhorar a transação de dados do usuário.
 
-O presente trabalho tem foco no método simplex revisado e suas variantes.
+	É importante nesta etapa criar o conjunto de dados alvo adequados para aplicar a mineração e os algoritmos de estatística, por causa da característica dos dados do fluxo de cliques e a sua relação com os outros dados coletados.
 
-\subsection{Método de Pontos Interiores}
-Em 1984, Karmarkar revolucionou a área de programação linear com a publicação de um algoritmo de complexidade polinomial que apresentou bom desempenho quando aplicado a problemas práticos \cite{MaculanPI}. Essa publicação deu origem a um novo campo de pesquisa, chamado de método dos pontos interiores.
+	Geralmente esta é a etapa que consome mais tempo e processamento computacional além de  algumas vezes precisar de algoritmos e heuristicas um pouco mais sofisticadas. Este processo é crítico para o sucesso da descoberta do padrão dos dados. Também podemos chamá-lo de preparação de dados.
 
-O método de pontos interiores tem como principal característica a de realizar a busca por soluções no interior da região viável do problema, até encontrar a solução ótima \cite{Pinto}.
-Em teoria, o método de pontos interiores é melhor que o método simplex, principalmente quando se leva em conta o critério de complexidade de pior caso. No entanto, na prática ambos os métodos concorrem até hoje. Já que o sucesso do método depende da estrutura dos problemas, da esparsidade \footnote{Quando uma matriz possui uma grande proporção de elementos nulos diz-se que é uma matriz esparsa \cite{Munari}.} e da arquitetura dos computadores \cite{MaculanPI}.
+	O sucesso da aplicação de técnicas de mineração de dados em Web Usage Mining é altamente dependente da aplicação correta das tarefas de pré-processamento.
 
-\section{Aplicações Práticas}
-Um problema de programação linear, como já dito anteriormente, busca a otimização na distribuição de recursos sujeitos a restrições. Por isso é considerada uma poderosa ferramenta de apoio a decisão \cite{FrossardMaxMin} e com utilização em diversas áreas, como: indústria, saúde, computação, produção, etc.
-As empresas, por exemplo, devem estar constantemente atentas a competitividade e as restrições existentes com o objetivo de alcançar suas metas, para isso é necessário otimizar os recursos disponíveis \cite{FrossardMaxMin}. Daí a importância da utilização da programação linear empregada em seu exemplo mais geral: maximizar o lucro e minimizar custos.  Na definição de modelos desse tipo deve-se considerar o preço de venda e o custo de produção, além de restrições do tipo: quantidade de matéria- prima e mão-de-obra disponíveis, máquinas disponíveis para produção, entre outros \cite{FrossardMaxMin}.
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.5]{step_1}
+\caption{Estrutura do pré-processamento da mineração de uso}
+\label{Rotulo}
+\end{figure}
 
-\begin{citacao}
-“Administrar com eficiência os recursos disponíveis na empresa, através do planejamento, controle e execução das atividades relacionadas á utilização destes, é fator fundamental na busca da otimização do resultado global da empresa. A programação linear juntamente com as técnicas de pesquisa operacional, permite identificar o resultado ótimo, considerando todas as restrições impostas no modelo adotado.” \cite[p.~31]{FrossardMaxMin}
-\end{citacao}
 
-A decomposição wavelet tem sido abordada mediante diferentes métodos. Dentre eles destacam-se os métodos que tem como base a programação linear. Um dos primeiros trabalhos nesta área foi proposto por \citeonline{Chen} utilizando métodos de pontos interiores. Devido ao fato de que os problemas lineares obtidos a partir da decomposição wavelet possuem matrizes muito densas, os autores restringiram a pesquisa apenas ao caso de problemas com dicionários com uma estrutura especial.  Vale resaltar também que o método gera problemas lineares de grande porte. Por exemplo, um problema de sinal de onda típico de comprimento 8192, se traduz em um problema linear de tamanho 8192 por 212.992.
+	Na segunda etapa, ou seja, descoberta do padrão, são usadas as estatísticas e base de dados, além da realização de operações de máquinas de aprendizagem para obter os padrões que estão escondidos, ocultos, que refletem no comportamento padrão dos usuários.
 
-Em seu trabalho \citeonline{Komodakis} diz que problemas de analise de imagens podem ser formulados como problemas de rotulagem, onde a partir de uma imagem segmentada, são realizadas comparações entre pontos vizinhos a fim de rotular um grupo de pontos afins. Uma questão que vem incentivando pesquisas nessas áreas, é como resolver problemas desse tipo de forma eficiente e precisa. O autor propõe a utilização do esquema primal- dual da programação linear, e diz que essa utilização revelou excelentes resultados
+	Na última etapa, ou seja, análise de padrão, as estatísticas e os padrões encontrados na etapa anterior serão processados e filtrados para gerar um modelo de usuários agregados que poderão ser utilizados como entrada de dados para ferramentas de visualização e análise de Web, geração de relatórios ou mecanismos de recomendação.
 
-Em \citeonline{Slyke} e \citeonline{Yarmish-Distrubuido} demonstram a eficiência da utilização do método simplex padrão de forma distribuída. Esse tipo de implementação é útil para a computação distribuída. Já que nesse tipo de implementação as colunas das matrizes, onde são armazenados os dados, são distribuídas entre os processadores, é mais intuitivo o uso do método simplex padrão. Além disso, esse método é mais utilizado e mais eficiente que o método revisado na resolução de problemas de grande porte, onde existe um maior volume de dados, fazendo mais sentido a utilização da programação distribuída.
-De acordo com \citeonline{Slyke} e \citeonline{Yarmish-Distrubuido} o eficiência do método simplex revisado é afetada pela densidade do problema, ou seja, é uma método mais eficiente para problemas esparsos, os quais são mais comuns. Porém existem aplicações que exigem modelos mais densos, como em processamento de imagens. Nesse caso a implementação de uma algoritmo do método simplex padrão distribuído se mostra mais eficiente. Além disso não existem algoritmos eficientes do método simplex revisado distribuído. Em conclusão o autor diz que a implementação apresentou bons resultados, especialmente para problemas grandes e densos.
 
-Em \citeonline{Burger} é proposto um algoritmo simplex distribuído para problemas de programação linear degenerados e atribuições multi- agentes. Um problema de programação linear é dito degenerado se na solução uma das variáveis valer zero. O objetivo do trabalho é propor um algoritmo simplex para ser implementado em uma distribuição multi- agente, onde os a gentes devem concordar com uma solução ótima ou declarar o problema como inviável, caso não haja solução ótima.
-
-No trabalho de \citeonline{YarmishWave} o autor resolve um conjunto de problemas de decomposição wavelet, utilizando tanto o método simplex revisado quanto o método simplex padrão. O autor mostra que embora o método simplex revisado seja superior no caso do problema mais geral (problema esparso), a resolução de problemas de decomposição wavelet resulta em um problema denso, onde o método simplex padrão tem melhor  desempenho.
-O termo wavelet refere-se basicamente a um conjunto de funções com forma de pequenas ondas \cite{Ondaletas}. A decomposição wavelet é uma metodologia de decomposição de uma função ou sinal em um domínio de freqüências e espaço, sendo possível investigar a ocorrência de fenômenos localizados no espaço e freqüência simultaneamente \cite{Peixoto-wavelet}.
-A decomposição wavelet em sua versão discreta é utilizada na compreensão de dados sendo útil no processamento de imagens. No processamento de imagens a utilização da decomposição wavelet se torna eficiente na extração de informações de um sinal e na análise de freqüências, principalmente quando ocorrem rápidas variações na frequência \cite{Leite-wavelet}
-
-A programação linear também se aplica na área da saúde, em \citeonline{Alterovitz-saude} é feita uma proposta de utilização da programação linear no tratamento do câncer.
-Em um determinado tipo de tratamento são inseridos cateteres na área afetada para introduzir o medicamento necessário, porém o medicamento acaba afetado células saudáveis além das cancerígenas. Como os problemas de programação linear podem ser resolvidos como problemas determinísticos e com solução exata, \citeonline{Alterovitz-saude} propõe que a formulação de um problema de otimização para determinar o tempo de permanência dos cateteres, minimizando os desvios na quantidade da dose necessitada pelo paciente. Nos testes realizados, os resultados obtidos não foram mostraram uma vantagem significativa em relação ao método atualmente utilizado.
-
-De acordo com \citeonline{Akira-database} dentre as inúmeras ferramentas de programação linear existentes, existe a carência de uma ferramenta que resolva problemas de programação linear de forma integrada a um banco de dados, utilizando procedimentos armazenados em sql pre compiladas em armazenadas no banco de dados juntamente com os dados. Essa características em uma ferramenta se torna importante, principalmente, em problemas de grande porte, suprimindo o tráfego de dados já que toda alógica é executada internamente no banco de dados, e apenas o resultado final é enviado para o usuario. Na implementação apresentada por \citeonline{Akira-database} os dados do modelo a ser resolvido são armazenados como modelos relacionais, ou seja, em matrizes bi-dimensionais. Apesar das vantagens desse tipo de implementação, o autor chegou a conclusão que o tempo de execução ainda deve ser melhorado.
-
-Outros exemplos bastante realistas da utilização da programação linear são os problemas de mistura e os de planejamento de produção e controle de estoque. No primeiro, basicamente trata-se da mistura de diferentes matérias para a produção de produtos, que devem obedecer a algumas especificações e, ao mesmo tempo, minimizar o custo ou maximizar o lucro. Já os problemas de planejamento de produção e controle de estoque possuem inúmeras aplicações, desde a alocação de máquinas para atender determinada demanda, até a utilização do estoque para atender a uma mudança imprevisível na demanda e necessidades de contratação de demissão para enfrentar mudanças nas necessidades de mão de obra \cite{Taha}.
-A programação linear além de estar presente, é fundamental em diversas áreas, tornando-se uma ferramenta de apoio a decisão e contribuindo para o sucesso de projetos nas áreas em que se aplica.
-
-\section{Ferramentas de Programação Linear}
-Durante a pesquisa foram utilizadas e encontradas algumas ferramentas para a resolução de problemas de programação linear, além de bibliotecas com problemas testes.
-Uma das ferramentas é o Tora \cite{Taha}, que é software com uma interface simples, mas com algumas características que não há tornam muito amigável, além disso é um software mais educacional, inclusive com o recurso que mostra o passo a passo na resolução do problema utilizando o método simplex tabular.
-
-\begin{center}
-	\captionof{figure}{Telas de entrada e sáida de dados do software Tora}
-\end{center}
-
-Já o Lingo disponibiliza uma versão demo gratuita. A maior dificuldade na utilização dessa ferramenta é o fato do usuário precisar digitar o modelo sem nenhuma orientação em relação a sintaxe, além disso a forma como o resultado é exibido dificulta a interpretação.
-O Cplex é uma ferramenta mais robusta, com mais recursos e uma interface mais elaborada. Não é gratuita, mas uma versão com licença acadêmica é disponibilizada. Permite a modelagem e resolução de problemas de otimização de diversa natureza, como por exemplo: programação inteira, programação linear e programação inteira mista. Utilizando para isso diferentes métodos de solução.
-O Glpk é um conjunto de rotinas destinadas a resolução de problemas de programação linear, além de problemas de programação inteira mista. As rotinas são escritas em ANSI C e podem ser utilizadas como biblioteca.
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.5]{mono_big}
+\caption{Estrutura do processo geral de mineração de uso}
+\label{Rotulo}
+\end{figure}
 

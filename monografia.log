@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.7.10)  20 JUL 2012 14:07
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.7.10)  20 JUL 2012 16:36
 entering extended mode
  %&-line parsing enabled.
 **monografia.tex
@@ -1017,31 +1017,34 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 ) (./monografia.aux
-(./capitulo1.aux) (./referencial_teorico.aux))
+(./capitulo1.aux) (./referencial_teorico.aux
+
+LaTeX Warning: Label `Rotulo' multiply defined.
+
+))
 \openout1 = `monografia.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 67.
-
-(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 68.
+ (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 67.
-Package hyperref Info: Link coloring OFF on input line 67.
+LaTeX Font Info:    ... okay on input line 68.
+Package hyperref Info: Link coloring OFF on input line 68.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
@@ -1051,8 +1054,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count161
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
+LaTeX Info: Redefining \ref on input line 68.
+LaTeX Info: Redefining \pageref on input line 68.
  (./monografia.out)
 (./monografia.out)
 \@outlinefile=\write4
@@ -1065,7 +1068,7 @@ Package caption Info: End \AtBeginDocument code.
  [0
 
 ]
-Underfull \hbox (badness 1394) in paragraph at lines 82--82
+Underfull \hbox (badness 1394) in paragraph at lines 83--83
 \OT1/cmr/m/n/12 ver-si-dade Es-ta-dual do Norte Flu-mi-nense
  []
 
@@ -1080,40 +1083,25 @@ Underfull \hbox (badness 1394) in paragraph at lines 82--82
 
  (./capitulo1.tex
 Cap\'{\i }tulo 1.
-[2
+) [2
 
 
 
-]) [3]
+] [3]
 \openout2 = `referencial_teorico.aux'.
 
  (./referencial_teorico.tex
 Cap\'{\i }tulo 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--24
-
- []
-
 [4
 
 
 
-]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 47.
-See the caption package documentation for explanation.
-
-[5] [6] [7] [8] [9]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 109.
-See the caption package documentation for explanation.
-
-[10]) [11] (./monografia.bbl [12
-
-
-])
+] [5] [6] [7]
+File: graficos/step_1.eps Graphic file (type eps)
+ <graficos/step_1.eps> [8]
+File: graficos/mono_big.eps Graphic file (type eps)
+ <graficos/mono_big.eps>) [9]
+(./monografia.bbl)
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
@@ -1122,18 +1110,21 @@ See the caption package documentation for explanation.
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 59.
 See the caption package documentation for explanation.
 
-[13] (./monografia.aux (./capitulo1.aux) (./referencial_teorico.aux))
+[10
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+] (./monografia.aux (./capitulo1.aux) (./referencial_teorico.aux))
+
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14018 strings out of 495042
- 193707 string characters out of 1181920
- 365152 words of memory out of 3000000
- 16909 multiletter control sequences out of 15000+50000
- 13440 words of font info for 50 fonts, out of 3000000 for 9000
+ 13922 strings out of 495042
+ 192125 string characters out of 1181920
+ 363152 words of memory out of 3000000
+ 16809 multiletter control sequences out of 15000+50000
+ 12986 words of font info for 48 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 38i,8n,49p,989b,493s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,6n,49p,902b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on monografia.dvi (15 pages, 70308 bytes).
+Output written on monografia.dvi (12 pages, 37952 bytes).
