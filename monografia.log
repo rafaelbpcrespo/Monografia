@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.7.10)  20 JUL 2012 16:36
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.7.10)  31 JUL 2012 01:20
 entering extended mode
  %&-line parsing enabled.
 **monografia.tex
@@ -1021,6 +1021,9 @@ Package caption Info: listings package is loaded.
 
 LaTeX Warning: Label `Rotulo' multiply defined.
 
+
+LaTeX Warning: Label `Rotulo' multiply defined.
+
 ))
 \openout1 = `monografia.aux'.
 
@@ -1083,11 +1086,11 @@ Underfull \hbox (badness 1394) in paragraph at lines 83--83
 
  (./capitulo1.tex
 Cap\'{\i }tulo 1.
-) [2
+[2
 
 
 
-] [3]
+]) [3]
 \openout2 = `referencial_teorico.aux'.
 
  (./referencial_teorico.tex
@@ -1096,12 +1099,23 @@ Cap\'{\i }tulo 2.
 
 
 
-] [5] [6] [7]
-File: graficos/step_1.eps Graphic file (type eps)
- <graficos/step_1.eps> [8]
-File: graficos/mono_big.eps Graphic file (type eps)
- <graficos/mono_big.eps>) [9]
-(./monografia.bbl)
+] [5]
+File: graficos/categorias.eps Graphic file (type eps)
+ <graficos/categorias.eps> [6] [7]
+File: graficos/grafico3.eps Graphic file (type eps)
+ <graficos/grafico3.eps>
+Overfull \hbox (4.97324pt too wide) in paragraph at lines 84--85
+ [][] 
+ []
+
+[8] [9] [10]
+File: graficos/aplicacoes.eps Graphic file (type eps)
+ <graficos/aplicacoes.eps>
+Overfull \hbox (5.67587pt too wide) in paragraph at lines 127--128
+ [][] 
+ []
+
+[11] [12]) [13] (./monografia.bbl)
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
@@ -1110,7 +1124,7 @@ File: graficos/mono_big.eps Graphic file (type eps)
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 59.
 See the caption package documentation for explanation.
 
-[10
+[14
 
 
 ] (./monografia.aux (./capitulo1.aux) (./referencial_teorico.aux))
@@ -1119,12 +1133,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13922 strings out of 495042
- 192125 string characters out of 1181920
+ 13985 strings out of 495042
+ 192965 string characters out of 1181920
  363152 words of memory out of 3000000
- 16809 multiletter control sequences out of 15000+50000
+ 16871 multiletter control sequences out of 15000+50000
  12986 words of font info for 48 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 38i,6n,49p,902b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,7n,49p,902b,418s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on monografia.dvi (12 pages, 37952 bytes).
+Output written on monografia.dvi (16 pages, 72512 bytes).

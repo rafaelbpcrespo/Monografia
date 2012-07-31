@@ -5,8 +5,74 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.53 }
 
+\bibitem[Carmona et al. 2012]{Carmona}
+\abntrefinfo{Carmona et al.}{CARMONA et al.}{2012}
+{CARMONA, C.~J. et al. Web usage mining to improve the design of an e-commerce
+  website: Orolivesur.com.
+\emph{Expert Syst. Appl.}, v.~39, n.~12, p. 11243--11249, 2012.}
+
+\bibitem[Casta{\~ n}o 2009]{Castano}
+\abntrefinfo{Casta{\~ n}o}{CASTA{\~ N}O}{2009}
+{CASTA{\~ N}O, A. {Minería de uso Web para la identificación de patrones}.
+\emph{Vector}, v.~4, p. 27 -- 37, Dezembro 2009.}
+
+\bibitem[Cho, Kim e Kim 2002]{HoCho}
+\abntrefinfo{Cho, Kim e Kim}{CHO; KIM; KIM}{2002}
+{CHO, Y.~H.; KIM, J.~K.; KIM, S.~H. A personalized recommender system based on
+  web usage mining and decision tree induction.
+\emph{Expert Syst. Appl.}, v.~23, n.~3, p. 329--342, 2002.}
+
+\bibitem[Cutting et al. 1992]{Cutting}
+\abntrefinfo{Cutting et al.}{CUTTING et al.}{1992}
+{CUTTING, D.~R. et al. A cluster based approach to browsing large document
+  collections.
+\emph{Proceedings of the Fifteenth International Conference on Research and
+  Development in Information Retrieaval}, 1992.}
+
+\bibitem[Jeria 2007]{Escobar}
+\abntrefinfo{Jeria}{JERIA}{2007}
+{JERIA, V. H.~E.
+\emph{Minería Web de Uso y Perfiles de Usuario: Aplicaciones con Lógica
+  Difusa}.
+Tese (Doutorado) --- DEPARTAMENTO DE CIENCIAS DE LA COMPUTACIÓN E INTELIGENCIA
+  ARTIFICIAL, Universidad de Granada, 2007.}
+
+\bibitem[Kosala 2000]{Kosala}
+\abntrefinfo{Kosala}{KOSALA}{2000}
+{KOSALA, H. B.~R. {Web Mining Research: A Survey}.
+\emph{ACM SIGKDD Explorations Newsletter, ACM Press}, v.~2, Julho 2000.}
+
 \bibitem[Liu 2007]{BingLiu}
 \abntrefinfo{Liu}{LIU}{2007}
 {LIU, B. \emph{Web Data Mining}. [S.l.]: Springer, 2007.}
+
+\bibitem[Marinho e Girardi 2003]{Girardi}
+\abntrefinfo{Marinho e Girardi}{MARINHO; GIRARDI}{2003}
+{MARINHO, L.~B.; GIRARDI, R. {Mineração na Web}.
+\emph{REIC - REVISTA ELETRÔNICA DE INICIAÇÃO CIENTÍFICA}, v.~3, Junho
+  2003.}
+
+\bibitem[Pal, Talwar e Mitra 2002]{Pal}
+\abntrefinfo{Pal, Talwar e Mitra}{PAL; TALWAR; MITRA}{2002}
+{PAL, S.~K.; TALWAR, V.; MITRA, P. {Web Mining in Soft Computing Framework:
+  Relevant, State of the Art and Future Directions}.
+\emph{IEEE TRANSACTIONS ON NEURAL NETWORKS}, v.~13, p. 1163 -- 1177, Setembro
+  2002.}
+
+\bibitem[SCHAFER 2001]{Schafer}
+\abntrefinfo{SCHAFER}{SCHAFER}{2001}
+{SCHAFER, J.~B. {E-commerce recommendation applications}.
+\emph{Journal of Data Mining and Knowledge Discovery}, v.~5, Janeiro 2001.}
+
+\bibitem[Zhang, Edwards e Harding 2007]{Zang}
+\abntrefinfo{Zhang, Edwards e Harding}{ZHANG; EDWARDS; HARDING}{2007}
+{ZHANG, X.; EDWARDS, J.; HARDING, J. Personalised online sales using web usage
+  data mining.
+\emph{Comput. Ind.}, Elsevier Science Publishers B. V., Amsterdam, The
+  Netherlands, The Netherlands, v.~58, n.~8-9, p. 772--782, dez. 2007.
+ISSN 0166-3615.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/dx\-.doi\-.org\-/10\-.1016\-/j\-.compind\-.%
+2007\-.02\-.004$>$}{http://dx.doi.org/10.1016/j.compind.2007.02.004}.}
 
 \end{thebibliography}
