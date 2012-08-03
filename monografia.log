@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.7.10)  31 JUL 2012 01:20
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.7.10)  3 AUG 2012 01:00
 entering extended mode
  %&-line parsing enabled.
 **monografia.tex
@@ -1024,6 +1024,10 @@ LaTeX Warning: Label `Rotulo' multiply defined.
 
 LaTeX Warning: Label `Rotulo' multiply defined.
 
+) (./capitulo3.aux
+
+LaTeX Warning: Label `Rotulo' multiply defined.
+
 ))
 \openout1 = `monografia.aux'.
 
@@ -1090,32 +1094,42 @@ Cap\'{\i }tulo 1.
 
 
 
-]) [3]
+] [3]) [4]
 \openout2 = `referencial_teorico.aux'.
 
  (./referencial_teorico.tex
 Cap\'{\i }tulo 2.
-[4
+[5
 
 
 
-] [5]
+] [6]
 File: graficos/categorias.eps Graphic file (type eps)
- <graficos/categorias.eps> [6] [7]
+ <graficos/categorias.eps> [7] [8] [9]
 File: graficos/grafico3.eps Graphic file (type eps)
  <graficos/grafico3.eps>
 Overfull \hbox (4.97324pt too wide) in paragraph at lines 84--85
  [][] 
  []
 
-[8] [9] [10]
+[10] [11]
 File: graficos/aplicacoes.eps Graphic file (type eps)
  <graficos/aplicacoes.eps>
-Overfull \hbox (5.67587pt too wide) in paragraph at lines 127--128
+Overfull \hbox (5.67587pt too wide) in paragraph at lines 135--136
  [][] 
  []
 
-[11] [12]) [13] (./monografia.bbl)
+[12] [13] [14]) [15]
+\openout2 = `capitulo3.aux'.
+
+ (./capitulo3.tex
+Cap\'{\i }tulo 3.
+File: graficos/diagrama.eps Graphic file (type eps)
+<graficos/diagrama.eps>) [16
+
+
+
+] [17] (./monografia.bbl)
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
@@ -1124,21 +1138,22 @@ Overfull \hbox (5.67587pt too wide) in paragraph at lines 127--128
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 59.
 See the caption package documentation for explanation.
 
-[14
+[18
 
 
-] (./monografia.aux (./capitulo1.aux) (./referencial_teorico.aux))
+] (./monografia.aux (./capitulo1.aux) (./referencial_teorico.aux)
+(./capitulo3.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13985 strings out of 495042
- 192965 string characters out of 1181920
+ 13996 strings out of 495042
+ 193119 string characters out of 1181920
  363152 words of memory out of 3000000
- 16871 multiletter control sequences out of 15000+50000
+ 16874 multiletter control sequences out of 15000+50000
  12986 words of font info for 48 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 38i,7n,49p,902b,418s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,7n,49p,902b,412s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on monografia.dvi (16 pages, 72512 bytes).
+Output written on monografia.dvi (20 pages, 80932 bytes).
